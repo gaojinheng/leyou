@@ -9,18 +9,18 @@ import javax.persistence.Table;
 public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
     private String name;// 品牌名称
     private String image;// 品牌图片
     private Character letter;
     // getter setter 略
 
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
